@@ -110,6 +110,8 @@ languageButton.addEventListener('click', () => {
   document.querySelectorAll('.company-link').forEach((link) => {
     link.innerHTML = language === 'de' ? '(↗ Unternehmensseite)' : '(↗ Company website)';
   });
-  languageButton.innerHTML = language === 'de' ? 'EN <span aria-hidden="true">↗</span>' : 'DE <span aria-hidden="true">↗</span>';
+  languageButton.innerHTML = language === 'de'
+    ? '<img class="switch-flag" src="flag-us.svg" alt=""> EN <span aria-hidden="true">↗</span>'
+    : '<img class="switch-flag" src="flag-de.svg" alt=""> DE <span aria-hidden="true">↗</span>';
   languageButton.setAttribute('aria-label', language === 'de' ? 'Switch language to English' : 'Sprache auf Deutsch wechseln');
 });

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.4 16" role="img" aria-label="Flagge der Vereinigten Staaten">
+  <rect width="30.4" height="16" fill="#fff"/>
+  <path fill="#b22234" d="M0 0h30.4v1.231H0zm0 2.462h30.4v1.231H0zm0 2.461h30.4v1.231H0zm0 2.462h30.4v1.231H0zm0 2.461h30.4v1.231H0zm0 2.462h30.4v1.231H0zm0 2.461h30.4v1.231H0z"/>
+  <rect width="12.16" height="8.615" fill="#3c3b6e"/>
+  <defs><path id="star" d="M0-.3 .07-.1 .29-.1 .12.04 .18.28 0 .14-.18.28-.12.04-.29-.1-.07-.1Z"/></defs>
+  <g fill="#fff">
+    <use href="#star" transform="translate(.8 .48)"/><use href="#star" transform="translate(2.7 .48)"/><use href="#star" transform="translate(4.6 .48)"/><use href="#star" transform="translate(6.5 .48)"/><use href="#star" transform="translate(8.4 .48)"/><use href="#star" transform="translate(10.3 .48)"/>
+    <use href="#star" transform="translate(1.75 1.43)"/><use href="#star" transform="translate(3.65 1.43)"/><use href="#star" transform="translate(5.55 1.43)"/><use href="#star" transform="translate(7.45 1.43)"/><use href="#star" transform="translate(9.35 1.43)"/>
+    <use href="#star" transform="translate(.8 2.38)"/><use href="#star" transform="translate(2.7 2.38)"/><use href="#star" transform="translate(4.6 2.38)"/><use href="#star" transform="translate(6.5 2.38)"/><use href="#star" transform="translate(8.4 2.38)"/><use href="#star" transform="translate(10.3 2.38)"/>
+    <use href="#star" transform="translate(1.75 3.33)"/><use href="#star" transform="translate(3.65 3.33)"/><use href="#star" transform="translate(5.55 3.33)"/><use href="#star" transform="translate(7.45 3.33)"/><use href="#star" transform="translate(9.35 3.33)"/>
+    <use href="#star" transform="translate(.8 4.28)"/><use href="#star" transform="translate(2.7 4.28)"/><use href="#star" transform="translate(4.6 4.28)"/><use href="#star" transform="translate(6.5 4.28)"/><use href="#star" transform="translate(8.4 4.28)"/><use href="#star" transform="translate(10.3 4.28)"/>
+    <use href="#star" transform="translate(1.75 5.23)"/><use href="#star" transform="translate(3.65 5.23)"/><use href="#star" transform="translate(5.55 5.23)"/><use href="#star" transform="translate(7.45 5.23)"/><use href="#star" transform="translate(9.35 5.23)"/>
+    <use href="#star" transform="translate(.8 6.18)"/><use href="#star" transform="translate(2.7 6.18)"/><use href="#star" transform="translate(4.6 6.18)"/><use href="#star" transform="translate(6.5 6.18)"/><use href="#star" transform="translate(8.4 6.18)"/><use href="#star" transform="translate(10.3 6.18)"/>
+    <use href="#star" transform="translate(1.75 7.13)"/><use href="#star" transform="translate(3.65 7.13)"/><use href="#star" transform="translate(5.55 7.13)"/><use href="#star" transform="translate(7.45 7.13)"/><use href="#star" transform="translate(9.35 7.13)"/>
+    <use href="#star" transform="translate(.8 8.08)"/><use href="#star" transform="translate(2.7 8.08)"/><use href="#star" transform="translate(4.6 8.08)"/><use href="#star" transform="translate(6.5 8.08)"/><use href="#star" transform="translate(8.4 8.08)"/><use href="#star" transform="translate(10.3 8.08)"/>
+  </g>
+</svg>

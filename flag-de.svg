@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" role="img" aria-label="Flagge Deutschlands">
+  <rect width="24" height="16" fill="#ffce00"/>
+  <path fill="#111" d="M0 0h24v5.34H0z"/>
+  <path fill="#dd0000" d="M0 5.33h24v5.34H0z"/>
+</svg>
