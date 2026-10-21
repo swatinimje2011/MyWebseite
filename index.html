@@ -34,6 +34,9 @@
     .switch-flag{display:block;width:24px;height:16px;flex:none;border:1px solid #0002;border-radius:2px;box-shadow:0 1px 2px #0002}
     .switch-flag[src="flag-us.svg"],.language-flag[src="flag-us.svg"]{width:30px}
   </style>
+  <style>
+    .impressum-link{display:inline-flex;align-items:center;gap:16px;padding:11px 16px;background:var(--green);color:#fff;text-decoration:none;font:12px var(--mono);border:1px solid var(--green);border-radius:2px;transition:background .15s ease}.impressum-link span{font-size:16px}.impressum-link:hover{background:#304c3b}@media(max-width:600px){footer{flex-wrap:wrap}footer p{flex:1}.impressum-link{order:2}footer .back-top{order:3}}
+  </style>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -71,6 +74,7 @@
         <h2 data-i18n="aboutTitle">Neugierig auf<br><span class="serif">das Wie und Warum.</span></h2>
         <div class="about-text"><p data-i18n="aboutText">Ich bin Softwareentwicklerin mit Freude daran, komplexe Ideen in verständliche und nützliche digitale Erlebnisse zu verwandeln. Mich interessieren gute Architektur, zugängliche Interfaces und die kleinen Details, die ein Produkt stimmig machen.</p><p class="note" data-i18n="aboutNote">Mit offenem Blick lernen. Mit Sorgfalt entwickeln.</p></div>
       </div>
+      <a class="text-link" href="impressum.html">Impressum <span aria-hidden="true">↗</span></a>
     </section>
 
     <section class="profile section tab-panel" data-tab-panel="profile" id="profile">
@@ -154,7 +158,7 @@
         <div class="project-info"><div><p class="project-type" data-i18n="projectType">PERSÖNLICHES PROJEKT · IN ENTWICKLUNG</p><h3 data-i18n="projectTitle">Ein Projekt in Arbeit</h3><p class="project-description" data-i18n="projectDescription">Hier stelle ich mein aktuelles Projekt vor — die Idee dahinter, die technischen Entscheidungen und was ich dabei lerne.</p></div><span class="project-arrow" aria-hidden="true">↗</span></div>
       </article>
     </section>
-    <footer><a class="wordmark" href="#home">S<span>.</span></a><p data-i18n="footer">Gestaltet mit Neugier und Sorgfalt.</p><a href="#home" class="back-top" data-i18n="backTop">ZURÜCK NACH OBEN ↑</a></footer>
+    <footer><a class="wordmark" href="#home">S<span>.</span></a><p data-i18n="footer">Gestaltet mit Neugier und Sorgfalt.</p><a href="impressum.html" class="impressum-link">Impressum <span aria-hidden="true">↗</span></a><a href="#home" class="back-top" data-i18n="backTop">ZURÜCK NACH OBEN ↑</a></footer>
   </main>
 </body>
 </html>
