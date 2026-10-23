@@ -24,9 +24,9 @@ const copy = {
     analysisLabel: 'Statische & dynamische Analyse', multithreadingLabel: 'Multithreading', sensingLabel: 'Sensorik & Bildverarbeitung',
     managementLabel: 'Projektmanagement & Versionskontrolle', requirementsLabel: 'Anforderungsmanagement & Dokumentation', performanceLabel: 'Performance-Analyse',
     languagesKicker: 'MEINE SPRACHKENNTNISSE', languagesTitle: 'Sprachen, die<br><span class="serif">mich verbinden.</span>',
-    langGerman: 'Deutsch', langEnglish: 'Englisch', langMarathi: 'Marathi', langHindi: 'Hindi', levelB2: 'B2', levelFluent: 'Fließend', levelNative: 'Muttersprache',
+    langGerman: 'Deutsch', langEnglish: 'Englisch', langMarathi: 'Marathi', langHindi: 'Hindi', levelB2: 'B2', levelFluent: 'Fließend', levelNative: 'Muttersprache', c1Prep: 'In Vorbereitung',
     progressTitle: 'Mein Deutschlernfortschritt', tableLevel: 'Niveau', tableStatus: 'Prüfung / Status', tableDate: 'Zeitpunkt', tableResult: 'Ergebnis',
-    a1Status: 'Bestanden', a2Status: 'Keine Prüfung abgelegt', b1Status: 'Bestanden', march2026: 'März 2026', b1Result: 'Sehr gut · 271,5 / 300 Punkte', b1Link: '(online ansehen ↗)', b2Status: 'Ergebnis ausstehend',
+    a1Status: 'Bestanden', a2Status: 'Keine Prüfung abgelegt', b1Status: 'Bestanden', march2026: 'März 2026', october2026: 'Okt. 2026', b1Result: 'Sehr gut · 271,5 / 300 Punkte', b1Link: '(online ansehen ↗)', b2Status: 'Bestanden', b2Result: 'Gut · 188 / 240 Punkte', b2Link: '(online ansehen ↗)',
     hobbiesKicker: 'MEINE HOBBYS', hobbiesTitle: 'Abwechslung<br><span class="serif">für Kopf und Hände.</span>',
     linkedinKicker: 'LINKEDIN', linkedinLabel: 'Mein LinkedIn-Profil',
     hobbiesIntro: 'Neben Code liebe ich Dinge, bei denen Ideen mit den Händen Gestalt annehmen.', baking: 'Backen',
@@ -60,10 +60,10 @@ const copy = {
     analysisLabel: 'Static & dynamic analysis', multithreadingLabel: 'Multithreading', sensingLabel: 'Sensors & computer vision',
     managementLabel: 'Project management & version control', requirementsLabel: 'Requirements management & documentation', performanceLabel: 'Performance analysis',
     languagesKicker: 'MY LANGUAGE SKILLS', languagesTitle: 'Languages that<br><span class="serif">bring us together.</span>',
-    langGerman: 'German', langEnglish: 'English', langMarathi: 'Marathi', langHindi: 'Hindi', levelB2: 'B2', levelFluent: 'Fluent', levelNative: 'Native',
-    germanExam: 'Passed the B1 exam in March with “Very Good” — 271.5 out of 300 points. Awaiting the result of my B2 exam.',
+    langGerman: 'German', langEnglish: 'English', langMarathi: 'Marathi', langHindi: 'Hindi', levelB2: 'B2', levelFluent: 'Fluent', levelNative: 'Native', c1Prep: 'In preparation',
+    germanExam: 'Passed the B1 exam in March with “Very Good” — 271.5 out of 300 points. Passed the B2 exam with “Good” — 188 out of 240 points.',
     progressTitle: 'My German learning progress', tableLevel: 'Level', tableStatus: 'Exam / status', tableDate: 'Date', tableResult: 'Result',
-    a1Status: 'Passed', a2Status: 'No exam taken', b1Status: 'Passed', march2026: 'March 2026', b1Result: 'Very Good · 271.5 / 300 points', b1Link: '(view online ↗)', b2Status: 'Result pending',
+    a1Status: 'Passed', a2Status: 'No exam taken', b1Status: 'Passed', march2026: 'March 2026', october2026: 'Oct. 2026', b1Result: 'Very Good · 271.5 / 300 points', b1Link: '(view online ↗)', b2Status: 'Passed', b2Result: 'Good · 188 / 240 points', b2Link: '(view online ↗)',
     hobbiesKicker: 'MY HOBBIES', hobbiesTitle: 'A change of pace<br><span class="serif">for mind and hands.</span>',
     linkedinKicker: 'LINKEDIN', linkedinLabel: 'My LinkedIn profile',
     hobbiesIntro: 'Beyond code, I enjoy hands-on activities that turn ideas into something tangible.', baking: 'Baking',
@@ -114,4 +114,22 @@ languageButton.addEventListener('click', () => {
     ? '<img class="switch-flag" src="flag-us.svg" alt=""> EN <span aria-hidden="true">↗</span>'
     : '<img class="switch-flag" src="flag-de.svg" alt=""> DE <span aria-hidden="true">↗</span>';
   languageButton.setAttribute('aria-label', language === 'de' ? 'Switch language to English' : 'Sprache auf Deutsch wechseln');
+  themeButton.setAttribute('aria-label', document.documentElement.dataset.theme === 'dark'
+    ? (language === 'de' ? 'Helles Design aktivieren' : 'Enable light theme')
+    : (language === 'de' ? 'Dunkles Design aktivieren' : 'Enable dark theme'));
+});
+
+const themeButton = document.querySelector('.theme-toggle');
+function applyTheme(theme) {
+  const isDark = theme === 'dark';
+  document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
+  themeButton.setAttribute('aria-pressed', String(isDark));
+  themeButton.setAttribute('aria-label', isDark
+    ? (language === 'de' ? 'Helles Design aktivieren' : 'Enable light theme')
+    : (language === 'de' ? 'Dunkles Design aktivieren' : 'Enable dark theme'));
+  try { localStorage.setItem('site-theme', isDark ? 'dark' : 'light'); } catch (error) { /* Theme still works for this visit. */ }
+}
+applyTheme(document.documentElement.dataset.theme || 'light');
+themeButton.addEventListener('click', () => {
+  applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark');
 });
