@@ -41,6 +41,9 @@
   <style>
     .hero{grid-template-columns:1fr;background-image:linear-gradient(90deg,rgba(5,13,25,.82) 0%,rgba(5,13,25,.68) 39%,rgba(5,13,25,.20) 76%,rgba(5,13,25,.28) 100%),url("robotics-vision-hero.webp");background-position:center;background-size:cover;background-repeat:no-repeat}.hero-copy{max-width:850px}.hero h1,.hero .eyebrow,.hero .intro,.hero .hero-bottom,.hero .text-link{color:#f0eee6}.hero .hero-bottom{border-color:#ffffff55}.hero .text-link{border-color:#ffffff99}.hero .text-link span:last-child{color:#c1d978}@media(max-width:760px){.hero{background-image:linear-gradient(180deg,rgba(5,13,25,.72),rgba(5,13,25,.52)),url("robotics-vision-hero.webp");background-position:68% center}}
   </style>
+  <style>
+    .hobbies{background-color:#222723;background-image:url("hobbies-section-background.webp");background-position:center;background-size:cover;background-repeat:no-repeat;color:#f0eee6}html[data-theme="dark"] .hobbies{background-image:url("hobbies-section-background.webp");background-position:center;background-size:cover;background-repeat:no-repeat}.hobbies .section-kicker{color:#d6dacf}.hobbies h2{color:#f0eee6}.hobby-card h3{color:#fff;text-shadow:0 1px 5px #0009}.hobby-icon{color:#d6e58e;text-shadow:0 1px 5px #0009}html:not([data-theme="dark"]) .hobby-card h3{color:var(--ink);text-shadow:none}html:not([data-theme="dark"]) .hobby-icon{color:#69805d;text-shadow:none}
+  </style>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -67,7 +70,6 @@
     </section>
 
     <section class="profile section tab-panel" data-tab-panel="profile" id="profile">
-      <p class="section-kicker">02 / <span data-i18n="profileKicker">BERUFSERFAHRUNG</span></p>
       <div class="profile-content">
         <h2 data-i18n="profileTitle">Erfahrung in<br><span class="serif">Softwareentwicklung.</span></h2>
         <p data-i18n="profileText">Ich bin Softwareentwicklerin mit über zehn Jahren Erfahrung in den Bereichen Automotive, Robotik, Computer Vision und Embedded-Systeme. Ich entwickle vom hardwarenahen Treiber bis zu Backend, Algorithmen und grafischen Oberflächen.</p>
@@ -85,13 +87,11 @@
     </section>
 
     <section class="section tab-panel standalone-info" data-tab-panel="profile" id="education">
-      <p class="section-kicker">03 / <span data-i18n="educationTitle">STUDIUM</span></p>
       <h2 data-i18n="educationHeading">Fundament für<br><span class="serif">Technik und Entwicklung.</span></h2>
       <div class="education-card"><span class="education-symbol" aria-hidden="true">✳</span><p class="education-degree" data-i18n="degree">Bachelor of Engineering, Electronics Engineering</p><p class="education-place"><a href="https://ycce.edu/" target="_blank" rel="noopener noreferrer">Yeshwantrao Chavan College of Engineering (YCCE)</a></p><p class="education-place" data-i18n="universityName">Universität Nagpur · Indien</p><p class="education-dates" data-i18n="educationDates">Juli 2007 – Mai 2011</p></div>
     </section>
 
     <section class="section tab-panel standalone-info" data-tab-panel="profile" id="skills">
-      <p class="section-kicker">04 / <span data-i18n="skillsTitle">FÄHIGKEITEN</span></p>
       <h2 data-i18n="skillsHeading">Werkzeuge für<br><span class="serif">komplexe Systeme.</span></h2>
       <div class="skills-grid">
         <article class="skill-card"><span>01</span><h3 data-i18n="programmingLabel">Sprachen & Frameworks</h3><p>C++, C, OpenCV, Python, C# WPF, XAML, gRPC, PCL, Kotlin</p></article>
@@ -107,7 +107,6 @@
     </section>
 
     <section class="languages section tab-panel" data-tab-panel="languages" id="languages">
-      <p class="section-kicker">06 / <span data-i18n="languagesKicker">MEINE SPRACHKENNTNISSE</span></p>
       <h2 data-i18n="languagesTitle">Sprachen, die<br><span class="serif">mich verbinden.</span></h2>
       <div class="language-list">
         <div class="language-row"><span class="language-name"><img class="language-flag" src="flag-de.svg" alt=""> <span data-i18n="langGerman">Deutsch</span></span><span class="language-level" data-i18n="levelB2">B2</span><span class="language-bar"><i style="--level:68%"></i></span></div>
@@ -131,17 +130,10 @@
     </section>
 
     <section class="hobbies section tab-panel" data-tab-panel="hobbies" id="hobbies">
-      <p class="section-kicker">07 / <span data-i18n="hobbiesKicker">MEINE HOBBYS</span></p>
-      <div class="hobbies-heading"><h2 data-i18n="hobbiesTitle">Abwechslung<br><span class="serif">für Kopf und Hände.</span></h2><p data-i18n="hobbiesIntro">Neben Code liebe ich Dinge, bei denen Ideen mit den Händen Gestalt annehmen.</p></div>
-      <div class="hobby-grid">
-        <article class="hobby-card hobby-bake"><span class="hobby-number">01</span><span class="hobby-icon" aria-hidden="true">✳</span><h3 data-i18n="baking">Backen</h3><p data-i18n="bakingText">Neue Rezepte ausprobieren und etwas Selbstgemachtes teilen.</p></article>
-        <article class="hobby-card hobby-cook"><span class="hobby-number">02</span><span class="hobby-icon" aria-hidden="true">◒</span><h3 data-i18n="cooking">Kochen</h3><p data-i18n="cookingText">Aromen kombinieren und Gerichte aus verschiedenen Küchen entdecken.</p></article>
-        <article class="hobby-card hobby-garden"><span class="hobby-number">03</span><span class="hobby-icon" aria-hidden="true">❋</span><h3 data-i18n="gardening">Gärtnern</h3><p data-i18n="gardeningText">Pflanzen beim Wachsen begleiten und Zeit im Grünen verbringen.</p></article>
-      </div>
+      <div class="hobbies-heading"><h2 data-i18n="hobbiesTitle">Abwechslung<br><span class="serif">für Kopf und Hände.</span></h2></div>
     </section>
 
     <section class="work section tab-panel" data-tab-panel="about" id="work">
-      <p class="section-kicker">08 / <span data-i18n="workKicker">AUSGEWÄHLTE ARBEIT</span></p>
       <div class="work-heading"><h2 data-i18n="workTitle">Ein Projekt,<br><span class="serif">viele Möglichkeiten.</span></h2><span class="work-count">2025 — 2026</span></div>
       <article class="project-card">
         <div class="project-visual" aria-hidden="true"><div class="project-window"><div class="window-bar"><i></i><i></i><i></i><span>PROJECT / 001</span></div><div class="window-content"><div class="window-side"><b></b><b></b><b></b></div><div class="window-main"><span class="mini-tag">IN PROGRESS</span><div class="window-line long"></div><div class="window-line"></div><div class="window-block"><span>01</span><span>02</span><span>03</span></div></div></div></div><span class="project-stamp">IDEA<br>→ IMPACT</span></div>
